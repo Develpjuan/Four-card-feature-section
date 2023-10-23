@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px; 
+    min-height: 100vh;
+}
+
+.description-section {
+    margin-bottom: 25px;
+}
+
+.description-section__title {
+    color: rgb(163, 165, 174);
+    font-weight: 200;
+    margin: 0;
+}
+
+.description-section__subtitle {
+    color: rgb(76, 78, 97);
+    margin: 5px 0 10px 0;
+}
+
+.description-section__text {
+    color: rgb(163, 165, 174);
+}
+
+.section {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgba(36, 36, 36, 0.233);
+    transition: transform 0.2s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.03);
+}
+
+.title {
+    color: rgb(76, 78, 97);
+    margin: 0;
+}
+
+.text {
+    margin: 5px 0 20px 0;
+    color: rgb(163, 165, 174);
+    font-weight: 200;
+}
+
+.content-img {
+    display: flex;
+    justify-content: flex-end
+}
+
+.supervisor {
+    border-top: 2px solid rgb(69, 211, 211);
+}
+
+.team-builder {
+    border-top: 2px solid rgb(235, 84, 84);
+}
+
+.karma {
+    border-top: 2px solid rgb(252, 175, 74);
+}
+
+.calculator {
+    border-top: 2px solid rgb(84, 158, 242);
+}
+
+@media screen and (min-width: 480px) {
+    .main {
+        padding: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .description-section {
+        text-align: center;
+    }
+
+    .section {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main {
+        height: 100vh;
+    }
+
+    .description-section {
+        margin: 0;
+    }
+
+    .section {
+        width: 335px;
+    }
+
+    .supervisor {
+        position: absolute;
+        right: 67%;
+        top: 325px;
+        width: 335px;
+        height: auto;
+        margin: 0;
+    }
+
+    .team-builder {
+        margin-bottom: 50px;
+    }
+
+    .calculator {
+        position: absolute;
+        left: 67%;
+        top: 325px;
+        width: 335px;
+        height: auto;
+        margin: 0;
+    }
+}
+

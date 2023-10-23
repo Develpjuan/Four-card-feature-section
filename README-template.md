@@ -1,0 +1,1 @@
+practica de Sección de funciones de cuatro tarjetas
